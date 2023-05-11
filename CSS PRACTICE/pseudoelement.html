@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        .div1{
+            height: 200px;
+            width: 250px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 2px solid blue;
+        }
+
+
+
+        .div1::first-letter{
+            font-size: 50px;
+            color: rebeccapurple;
+        }
+        .div1::first-line{
+            color: red;
+        }
+
+     .go::before{
+       content:"\1F525";
+     }
+      .go::after{
+        content:"\1F525";
+      }
+      li::marker{color: rebeccapurple;}
+      input::placeholder{
+        text-align: center;
+        color: rebeccapurple;
+        font-size: 20PX;
+        
+      }
+    </style>
+</head>
+<body>
+
+    <h1 class="go">hello world</h1>
+    <div class="div1">
+        
+        <span>hello world</span> <br>
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et numquam similique. In quidem, eos vitae iure officiis rem, cum doloremque accusantium necessitatibus laboriosam earum! Nobis consequuntur officia similique non.
+    </div>
+    <i class="fa-solid fa-magnifying-glass"></i>   
+    <ul>
+        <li>main1</li>
+        <li>main2</li>
+    </ul>
+    <input type="text" name="name" placeholder="enter name">
+</body>
+</html>

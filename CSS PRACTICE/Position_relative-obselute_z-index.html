@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .main {
+            position: relative;
+        }
+
+        .my1 {
+            position: absolute;
+            z-index: 1;
+
+        }
+
+        .my2 {
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            z-index: 3;
+        }
+
+        .my3 {
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="my1"> <img src="my.jpg"></div>
+        <div class="my2"><img src="my1.jpg"></div>
+        <div class="my3"><img src="my2.avif"></div>
+
+
+
+    </div>
+
+</body>
+
+</html>
