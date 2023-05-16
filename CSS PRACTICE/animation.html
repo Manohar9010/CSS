@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv{
+            height: 200px;
+            width: 200px;
+            background-color: olivedrab;
+            
+            /* animation-name:name;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: backwards ;
+            animation-play-state:running ;
+            margin: 150px auto; */
+            animation: move;
+            animation-duration:2s ;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: backwards;
+            /* animation-delay: ; */
+            animation-iteration-count: infinite;
+            margin: 100px auto;
+            
+
+        }
+     @keyframes move{
+        from{
+
+            transform: rotate(0deg) scale(0.5);
+            /* margin-left: 0; */
+        }
+          to{
+            /* margin-left: 500PX; */
+            background-color: blue;
+            background-color: red; transform: rotate(360deg) scale(1.1);
+          }
+     }
+   </style>
+</head>
+<body>
+    <div class="mydiv"></div>
+</body>
+</html>
