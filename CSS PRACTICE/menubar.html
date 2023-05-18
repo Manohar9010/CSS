@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            background-color: #bd721a;
+            
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        .main .margind{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .main .paddingd{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .main .menu{
+            display: flex;
+            align-items: center;
+
+        }
+        .main .menu .logo{
+            flex: 1;
+
+        }
+        .main .menu .nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: end;
+            gap:80px;
+            font-size: 20PX;
+            text-transform: capitalize;
+           
+        }
+        .main .menu .nav{
+            flex: 4;
+        
+          
+
+        }
+        .main .menu .searchd{
+            display: flex;
+            gap: 50px;
+            flex: 2;
+           justify-content: end;
+           align-items: center;
+        }
+        .main .menu .fa-chalkboard-user{
+            color: orange   ;
+        }
+        .main .logo h1{
+            color: white;
+        }
+        .searchd button{
+            height:40px ;
+            width:200px ;
+            background-color: transparent;
+            border: 3px solid white;
+            letter-spacing: 2px;
+            color: white;
+        }
+        .searchd .icon .fa-moon{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="margind">
+            <div class="paddingd">
+                <div class="menu">
+                    <div class="logo">
+                        <h1>
+                            <span class="fa-solid fa-chalkboard-user"></span>
+                            Edukator
+                        </h1>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="">home</a></li>
+                            <li><a href="">about</a></li>
+                            <li><a href="">courses</a></li>
+                            <li><a href="">pages</a></li>
+                            <li><a href="">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="searchd">
+                        <div>
+                            <button><span class="fa-solid fa-search"></span> search</button> 
+                        </div >
+                         <div class="icon">
+                            <span class="fa-solid fa-moon"></span>
+                         </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
