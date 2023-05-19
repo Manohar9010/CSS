@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation for job</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      .main{
+        position: relative;
+      }
+
+      .out{
+        position: absolute;
+        background-color: rgb(168, 255, 127);
+        padding: 0px;
+        margin: 0px;
+      }
+      .main .out{
+        height: auto;
+        width: 100%;
+      }
+      .main .box h1{
+        padding: 30px 0px 30px 120px;
+      }
+      .main .out .box{
+        height: auto    ;
+        width: 500px;
+        border: 2px solid black;
+        margin: 100px auto;
+        background-color: white;
+        padding: 0px 30px 30px 30px;
+        font-size: 20px;
+        text-transform: capitalize;
+        /* text-align: right; */
+      }
+      .line{
+        display: grid;
+        grid-template-columns:auto auto;
+        row-gap: 10px;
+        column-gap:60px ;
+      }
+      .main .line input{
+        height: 30px ;
+        width: 250px;
+        border: 1px solid rgb(158, 152, 152);
+        border-radius: 5px;
+        padding-left: 10px;
+      }
+      input::placeholder {
+      font-weight: bold;
+      /* opacity: 0.5; */
+      text-transform: capitalize;
+      
+         }
+      .main .line .name{
+        text-align: right;
+    
+      }
+      .main .line .box2{
+        display: flex;
+      }
+      .main .line .box2 input{
+        width: 50px;
+        height: 20px;
+
+      }
+      .main .line .box3 input{
+        height: 15px;
+        width: 40px;
+        padding: 0px;
+      }
+      /* .main .line {
+
+        position: relative;
+      }
+      .box4{
+        position: absolute  ;
+        top: 750px;
+        left: 500px;
+
+    } */
+      .main .line .box4 input{
+        height:30px ;
+        width: 200px;
+        border-radius: 8px;
+        margin: 0px 0px 0px -100px;
+        padding-top: 8px;
+        
+        background-color:blue ;
+        color: white;
+      }
+      .main .line .box5 select{
+          width: 230px;
+          height: 25px;
+          border-radius: 5px;
+      }
+      .main .line .box6 textarea::placeholder{
+        text-transform: capitalize;
+        font-weight: 500px;   
+        font-size: 15px;
+        padding-left: 10px;
+        font-family: sans-serif;
+
+      }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="out">
+            <div class="box">
+                <h1>Registation for Job</h1>
+                <form action="#" method="get" name="registationform"> <div class="line">
+                    <div class="name">
+                        <label for="">first name</label>
+                    </div>
+                    <div class="box1">
+                        <input type="text" name="fname" placeholder="enter First name">
+                    </div>
+                    <div class="name">
+                        <label for="">mibble name</label>
+                    </div>
+                    <div class="box1">
+                        <input type="text" name="m name" placeholder="enter middle name">
+                    </div>
+                    <div class="name">
+                        <label for="">last name</label>
+                    </div>
+                    <div class="box1">
+                        <input type="text" name="lastname" placeholder="enter last name">
+                    </div>
+                    <div class="name">
+                        <label for="">address</label>
+                    </div>
+                    <div class="box6">
+                        <textarea name="" id="" cols="28" rows="7" placeholder="enter address"></textarea>
+                    </div>
+                    <div class="name">
+                        <label for="">date of birth</label>
+                    </div>
+                    <div class="box1">
+                        <input type="date" name="datetime" placeholder="">
+                    </div>
+                    <div class="name">
+                        <label for="">gender</label>
+                    </div>
+                    <div class="box2">
+                        <input type="radio" name="gender">male 
+                        <input type="radio" name="gender">Female
+                    </div>
+                    <div class="name">
+                        <label for="">experiance</label>
+                    </div>
+                    <div class="box5">
+                        <select>
+                            <option value="">----select----</option>
+                            <option value="">2 years</option>
+                            <option value="">3 years</option>
+                            <option value="">5 years</option>
+                        </select>
+                    </div>  
+                    <div class="name">
+                        <label for="">mobile no</label>
+                    </div>
+                    <div class="box1">
+                        <input type="text" name="phonenumber" placeholder="enter mobile no" maxlength="10">
+                    </div>
+                    <div class="name">
+                        <label for="">email id</label>
+                    </div>
+                    <div class="box1">
+                        <input type="email" name="email" placeholder="enter email" required>
+                    </div>
+                    <div class="name">
+                        <label for="">Create password</label>
+                    </div>
+                    <div class="box1">
+                        <input type="password" name="password" placeholder="enter password">
+                    </div>
+                    <div class="name">
+                        <label for=""></label>
+                    </div>
+                    <div class="box3">
+                        <input type="checkbox" name="showpassword">show password 
+                    </div>
+                     <!-- <div class="box4"><button>RGISTER</button>
+                    </div> -->
+                    <div class="name">
+                        <label for=""></label>
+                    </div>
+                    <div class="box4">
+                        <input type="submit" name="submit" placeholder="" value="RGISTER
+                        ">
+                    </div>
+                    
+                </div></form>
+               
+               
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registation for job</title>
+    <style>
+        .back{
+            background-color: rgb(111, 238, 37);
+            height: 641px;
+            position: relative;
+        }
+        .div1{
+            height: 560px;
+            width: 500px;
+            background-color:white;
+            position: absolute;
+            top:50px;
+            left: 350px;
+            padding: 0px 0px 0px 80px;
+            /* text-align: right; */
+        }
+        .main .div1 table label{
+            text-align: left;
+            padding-right: 35px;
+        }
+        .main .div1 table input{
+            height: 25px;
+            /* width: 300px; */
+            border-radius: 5px;
+            border: 1px solid grey;
+            padding-left: 10PX;
+            padding-right: 60px;
+        }
+        .main .back .div1 h1{
+            padding-left: 80px;
+        }
+        .main .back .div1 button{
+            margin-left:80px ;
+            height: 25px;
+            width: 200px;
+             background-color: blue;
+             color: white;
+             border-radius: 5px;            
+        }
+        .show{
+            margin-left: 150px;
+        }
+        .selec{
+            height: 25px;
+            width: 200px;
+        }
+        .dat{
+            height: 25px;
+            width: 150px;
+        }
+               
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="back">
+        <div class="div1">
+            <h1>Registation for Job</h1>
+            <form action="#"method="get" name="register">
+              <table border="0px">
+                <tr>
+                    <td> <label for="">First Name</label></td>
+                    <td><input type="text" name="f anme" id="" placeholder="Enter First name" autofocus><br></td>
+                </tr>
+                <tr>
+                    <td><label for="">Middle Name</label></td>
+                    <td><input type="text" name="m name" id="" placeholder="Enter Middle Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Last Name</label></td>
+                    <td><input type="text" name="l name" id="" placeholder="Eanter Last Name"></td>
+                </tr>
+               <tr>
+                <td><label for="">Address</label></td>
+                <td><textarea name="Address" id="" cols="23" rows="5" placeholder="Enter Address"></textarea></td>
+               </tr>
+               <tr>
+                <td><label for="">Date of Birth</label> </td>
+                <td><input type="date" name="date" id="" placeholder="" class="dat"></td>
+               </tr> 
+               <tr>
+                <td><label for="">Gender</label></td>
+                <td><input type="radio" name="gender" id="" placeholder="" value="">Male
+                 <input type="radio" name="gender" id="" placeholder="" value="">Female</td>
+               </tr>
+               <tr>
+                <td> <label for="">Experiance</label> </td>
+                <td> <select class="selec">                    
+                    <option> ----select---- </option>
+                    <option>2 years</option>
+                    <option>3 years</option>
+                    <option>5 years</option>
+                </select></td>
+               </tr>
+               <tr>
+                <td><label for="">Mobile No</label></td>
+                <td><input type="text" name="phonenumber" id="" maxlength="10" placeholder="Enter Mobile No"></td>
+               </tr>
+               <tr>
+                <td><label for="">Email id</label></td>
+                <td><input type="email" name="email" id="" placeholder="Enter email" required></td>
+               </tr>
+               <tr>
+                <td> <label for="">Create password</label></td>
+                <td> <input type="password" name="password" id="" placeholder="Enter password"></td>
+               
+               </tr>
+               <!-- <tr >
+                <td ><input type="checkbox" name="showpassword" id="" placeholder="">Show Password</td>
+               </tr> -->
+              </table>
+              <input type="checkbox" name="showpassword" id="" placeholder="" class="show">Show Password<br><br>
+
+              <button type="submit" name="submit" value="Register">Register</button>
+            </form>
+        </div>
+    </div>
+</div>    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    .div1{
+        height: 211px;
+        width: 259px;
+        margin: 170px auto;
+       border: 2px solid black;
+       padding-left: 48px;
+       padding-top: 20px;
+        
+    }
+    h2{
+        margin-left: 43px;
+
+    }
+    input{
+        height:23px ;
+        width:218px ;
+        border-radius: 5px;
+
+    }
+    button{
+        height:33px;
+        width:87px ;
+        background-color: blue;
+     border-radius: 5px;
+        margin-left: 134px;
+        color: white;
+        font-size: 12px;
+
+    }
+    body{
+        background:radial-gradient( #f3d1de 173px, #a74957 406px, #f3bfc8 750px, #f3bfc8 1000px)
+        /* background:radial-gradient(circle at center, brown 20px ) */
+    }
+    h2::before{
+        content:"";
+        height: 3px;
+        width: 40px;
+        background-color:blue;
+        display: inline-block;  
+
+    }
+    h2::after{
+        content:"";
+        height: 3px;
+        width: 40px;
+        background-color:blue;
+        display: inline-block;  
+
+    }
+
+</style>
+</head>
+<body>
+    <div class="div1">
+        <h2>Login</h2>
+        <input type="email" name="email" placeholder="Enter Email"><br><br>
+        <input type="password" name="password" placeholder="Enter password">
+      <br> <br> <button>Login <i class="fa-sharp fa-solid fa-forward"></i></button>
+    </div>
+    <i class="fa-sharp fa-solid fa-hyphen"></i>
+    <i class="fa-sharp fa-solid fa-horizontal-rule"></i>
+</body>
+</html>

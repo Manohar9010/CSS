@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        .main{
+            position: relative;
+            margin: 150px 0px 0px 500px;
+           
+        }
+        .load1{
+            position: absolute;
+            height:200px ;
+            width: 200px;
+            /* border:4px solid black ; */
+            border-radius: 50%;
+            border-top: 4px solid black;
+            border-right:  4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid transparent;
+            animation: bor1 2s linear  infinite ;
+              transition: 2s all ease;
+        }
+        .load2{
+
+            position: absolute;
+            height:150px ;
+            width: 150px;
+            /* border: 4px solid black; */
+            margin: 25px 5px 0px 23px;
+            border-radius: 50%;
+            border-top: 4px solid transparent;
+            border-right:  4px solid red;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid transparent;
+            animation: bor2 2s linear  infinite ;
+            animation-direction: reverse    ;
+              transition: 2s all ease;
+
+        }
+        .load3{ 
+            position: absolute;
+            height:110px ;
+            width: 110px;
+            border: 4px solid black;
+            margin: 45px 0px 0px 42px;
+            border-radius: 50%;
+            border-top: 4px solid transparent;
+            border-right:  4px solid transparent;
+            border-bottom: 4px solid goldenrod;
+            border-left: 4px solid transparent;
+            animation: bor3 2s linear infinite;
+            transition: 2s all ease-in-out;
+
+
+
+        }
+        .text{
+            position: absolute;
+            top: 80px;
+            left: 65px;
+            animation: heartBeat 1s ease infinite;
+        }
+        @keyframes bor1 {
+            0%{
+                 transform: rotate(0deg);
+                 border-top-color: rgb(21, 255, 0);
+            }
+            50%{
+                /* background: linear-gradient( green,yellow); */
+                border-top-color: aqua;
+            }
+            75%{
+                border-top-color: rgb(255, 166, 0);
+            }
+            100%{
+                transform: rotate(360deg);
+                border-top-color: rgb(172, 12, 124);
+            }
+           
+            
+        }
+        @keyframes bor2 {
+                0%{
+                 transform: rotate(0deg);
+                 border-right-color: rgb(21, 255, 0);
+            }
+            50%{
+                /* background: linear-gradient( green,yellow); */
+                border-right-color: aqua;
+            }
+            75%{
+                border-right-color: rgb(255, 166, 0);
+            }
+            100%{
+                transform: rotate(360deg);
+                border-right-color: rgb(172, 12, 124);
+            }
+
+                
+            }
+            @keyframes bor3 {
+                0%{
+                 transform: rotate(0deg);
+                 border-bottom-color: rgb(21, 255, 0);
+            }
+            50%{
+                /* background: linear-gradient( green,yellow); */
+                border-bottom-color: aqua;
+            }
+            75%{
+                border-bottom-color: rgb(255, 166, 0);
+            }
+            100%{
+                transform: rotate(360deg);
+                border-bottom-color: rgb(172, 12, 124);
+            }
+
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="load1">
+            
+        </div>
+        <div class="load2">
+            
+        </div>
+        <div class="load3"></div>
+        <div class="text">
+            <h4>Loading......</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
