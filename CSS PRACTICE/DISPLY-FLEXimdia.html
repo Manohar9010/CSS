@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .disply{
+            background-color: aquamarine;
+        }
+        .disply .margind{
+            margin: 0px 50px;
+        }
+        .disply .paddingd{
+            padding: 50px 0px;
+        }
+        .disply .flexd{
+            display: flex;
+            gap: 50px;
+        }
+        .disply .flexd .right{
+            flex: 1;
+        }
+        .disply .flexd .left {
+            padding-top: 80px;
+            flex: 1;
+        }
+        .disply .flexd .right img{
+            height: auto;
+            max-width: 100%;
+        }
+        .disply .left h5{
+            background-color: blue;
+            width: fit-content;
+            font-size: 15px;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: sans-serif;
+            text-transform: capitalize;
+
+        }
+        .disply .left h1{
+            padding: 30px 0px;
+            font-family: sans-serif;
+            text-transform: capitalize;
+             
+        }
+        .disply .left p{
+            padding-bottom: 30px;
+            letter-spacing: 2px;
+            line-height: 25px;
+        }
+        .disply .left a{
+            text-decoration: none;
+            font-family: sans-serif;
+            
+
+        }
+        .disply .left .btn{
+             height:50px ;
+             width:120px ;
+            border: 2px solid black;
+            display: grid;
+            place-content: center;
+            position: relative;
+            border-radius: 10px;
+            /* color: white; */
+             
+        }
+        .disply .left .btn::after{
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            right:0px ;
+            bottom:0px ;
+            left: 0px;
+            background-color: rgb(70, 70, 236);
+            transform: scale(0);
+            transform-origin: 100% 100%;
+            transition: 1s all ease-in-out;
+            /* z-index: -1; */
+
+
+        }
+        .disply .left .btn:hover::after{
+            transform: scale(1);
+        }
+        .disply .left .btn:hover a{
+            color: white;
+            z-index: 1;
+        }
+        @media (max-width:576px) {
+            .disply .flexd{
+                display: flex;
+                flex-direction: column;
+            
+            }
+            .disply .flexd .left {
+            padding-top: 5px;
+            flex: 1;
+        }
+        .disply .margind{
+            margin: 0px 20px;
+        }
+
+        }
+        @media (min-width:576px) {
+            .disply .flexd{
+                display: flex;
+                flex-direction: column;
+            
+            }
+            .disply .flexd .left {
+            padding-top: 5px;
+            flex: 1;
+        }
+        .disply .margind{
+            margin: 0px 20px;
+        }
+
+        }
+        @media (min-width:768px){
+            .disply .flexd{
+                display: flex;
+                flex-direction: column;
+            
+            }
+            .disply .flexd .left {
+            padding-top: 5px;
+            flex: 1;
+        }
+        .disply .margind{
+            margin: 0px 20px;
+        }
+
+        }
+        @media (min-width:996px){
+            .disply .flexd{
+                display: flex;
+                flex-direction: row;
+            
+            }
+            .disply .flexd .left {
+            padding-top:40px;
+            flex: 1;
+        }
+        .disply .margind{
+            margin: 0px 30px;
+        }
+        }
+        @media (min-width:1200px){
+            .disply .flexd .left {
+            padding-top:80px;
+            flex: 1;
+        }
+        .disply .margind{
+            margin: 0px 50px;
+        }
+
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="disply">
+        <div class="margind">
+            <div class="paddingd">
+                <div class="flexd">
+                    <div class="right">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/moxie-houston-1-7-19-11-1608613385.jpg" alt="">
+                    </div>
+                    <div class="left">
+                        <h5>real history</h5>
+                        <h1>best interior designs for your family</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui porro fuga, labore aliquam consequatur cumque ipsam quis odit placeat a numquam dolores iusto minima unde, debitis quos laboriosam quibusdam voluptatem!</p>
+                         <div class="btn">
+                            <a href="">Read More</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
