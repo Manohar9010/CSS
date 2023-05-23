@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main{
+            background-color: bisque;
+            
+        }
+        .main .margind{
+            margin: 0px 50px;
+        }
+        .main .paddingd{
+            padding: 50px 0px;
+        }
+        .main .gridd{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .main .gridd .box{
+            /* border: 2px solid black; */
+            padding: 20px;
+        }
+        span{
+            font-size: 35px;
+            color: rgb(250, 80, 80);
+        }
+        .main .box h2{
+            padding: 20px 0px;
+            text-transform: capitalize  ;
+        }
+        .main .box p{
+            color: grey;
+        }
+        .main .box h2:hover{
+            color: rgb(165, 149, 56);
+        }
+        .main .box:hover{
+            transform: translateY(-3px);
+            box-shadow: 0px 0px 10px 0px;
+        }
+        .main .box:hover span{
+            transform: translateY(-3px);
+            /* color: aqua; */
+            /* box-shadow: 0px 0px 10px 0px black; */
+            text-shadow: -1px 0px 12px black;
+        }
+        @media (max-width:576px) {
+            .main .margind{
+                margin: 0px 30px;
+            }
+            
+            
+            .main .gridd {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+            
+        }
+        @media (min-width:576px){
+            .main .margind{
+                margin: 0px 30px;
+            }
+            
+            
+            .main .gridd {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        @media (min-width:768px){
+            .main .margind{
+                margin: 0px 30px;
+            }
+            
+            
+            .main .gridd {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media (min-width:992px){
+            .main .margind{
+                margin: 0px 30px;
+            }
+            
+            
+            .main .gridd {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 20px;
+            }
+        }
+        @media (min-width:1200px){
+            .main .margind{
+                margin: 0px 50px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="margind">
+            <div class="paddingd">
+                <div class="gridd">
+                    <div class="box">
+                        <span class="fa-solid fa-users"></span>
+                        <h2>the best and most involved teachers </h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum saepe quo reprehenderit praesentium maxime amet. Quo voluptate alias perferendis error accusantium ipsum, maxime harum quasi id mollitia voluptatem, nam ab!</p>
+
+                    </div>
+                    <div class="box">
+                        <span class="fa-solid fa-laptop-code"></span>
+                        <h2>the large selection of courses and instruction</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quo veniam odit inventore voluptates dolor, tempora ducimus! Ea, nisi. Reiciendis minima consequuntur hic! Deserunt maiores fugit iste tenetur saepe illum?</p>
+                    </div>
+
+                    <div class="box">
+                        <span class="fa-solid fa-book-open"></span>
+                        <h2>high-quality classes & courses categories</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quas repellendus in laborum quia! Harum nulla voluptate eligendi incidunt voluptatem molestiae temporibus nam nostrum, iure, sed minima ipsa laborum esse!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

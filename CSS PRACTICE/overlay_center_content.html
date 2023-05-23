@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            height: 400px;
+            width: 400px;
+            margin: 100px auto;
+            position: relative;
+        }
+        img{
+            height: 400px;
+            width: 400px;
+
+        }
+        .text{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            color: white;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(0,0,0,0.588);
+            display: grid;
+            place-content: center;
+            transition: 1s all ease-in-out;
+            transform: scale(0);
+
+        }
+        .div1:hover .text{
+           transform: scale(1);
+
+        }
+        .content{
+            transition: 1s all ease-in-out;
+            transform: scale(0);
+            transition-delay: 0;
+        }
+        .div1:hover .content{
+            transform: scale(1) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img src="https://cdn.wallpapersafari.com/45/38/WbCw7B.jpg" alt="">
+        <div class="text">
+            <div class="content">
+                <h1>Always smile</h1>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+

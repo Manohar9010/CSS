@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            height: 400px;
+            width: 400px;
+            margin: 100px auto;
+            position: relative;
+
+        }
+        img{
+            height: 400px;
+            width: 400px;
+        }
+        .text{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            /* left: 0px; */
+            color: white;
+            background-color: rgb(0,0,0,0.588);
+            text-transform: capitalize;
+            height: 100%;
+            width: 0%;
+            display: grid;
+            place-content: center;
+            overflow: hidden;
+            transition: 1s all ease-in-out;
+
+        }
+        .div1:hover .text{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img src="https://wallpaperaccess.com/full/5166680.jpg" alt="">
+        <div class="text">
+            <h1>smile again</h1>
+        </div>
+    </div>
+    
+</body>
+</html>

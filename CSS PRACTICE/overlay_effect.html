@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            margin: 100px auto;
+
+            position: relative;
+        }
+        img{
+            height: 400px;
+            width: 400px;
+        }
+        .text{
+            position: absolute;
+            /* top: 0px; */
+            right: 0px;
+            left: 0px;
+            bottom: 0px;
+            height: 0px;
+            width: 100%;
+            background-color: rgba(36, 224, 121, 0.397);
+            display: grid;
+            place-content: center;
+            overflow: hidden;
+            transition: 1s all ease-in-out;
+
+
+            color: white;
+        }
+        .div1:hover .text{
+            height: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img src="https://e1.pxfuel.com/desktop-wallpaper/476/599/desktop-wallpaper-smiley-face-pretty-smiley-face-thumbnail.jpg" alt="">
+        <div class="text">
+            <h1>hello sweety</h1>
+        </div>
+    </div>
+      
+</body>
+</html>
