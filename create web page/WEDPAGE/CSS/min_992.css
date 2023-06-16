@@ -1,0 +1,71 @@
+@media (min-width:992px) {
+    /* ====COMMON CSS======= */
+    header .container{
+        margin: 0px 65px;
+    }
+    /* ========header===== */
+    header .navbar .navigation{
+        flex: 3;
+        display: flex;
+     }
+     header .navbar .end-nav .navbtn button{
+        display: none;
+        
+    }
+    header .navbar .search{
+        display: block;
+    }
+    header .navbar .login{
+        display: block;
+    }
+    header .container .navbar .logo .fa-gem{
+        font-size:40px;
+        color: #FE79A2;
+    
+    }
+    /* =====home page==== */
+    .homepage .homepage-p .homepage-content h1{
+        
+        font-size:55px;
+ }
+ .homepage .waveWrapper.waveAnimation{
+        height: 210px;
+        margin-top: -50px;
+    }
+       /* =====learn-detailes */
+       .learn_course .container .learn_details{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .learn_course .learn-bottom{
+        width: 50%;
+       
+    }  
+     /* ======OUR FACILITY======= */
+     .ourfacility .container .facilitydetails{
+        display: flex;
+        flex-direction: row;
+    }
+    /* ====== news section ===== */
+    .news-sec .container .newsdetailes {
+        display: flex;
+        flex-direction: row;
+    }
+
+     /* testimonilas */
+     .testimonials .container .client-grid{
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+     
+    }
+    /* brands section inherit from 768px */
+
+    /* footer */
+    footer .container .footer-grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    
+}

@@ -1,0 +1,61 @@
+/* ======home page====== */
+@media (min-width:1200px) {
+    .homepage .back .trend{
+        display: flex;
+      
+        align-items: center;
+        padding-top: 100px;
+    
+    }
+    .homepage .back .trend .title h1{
+        padding-top: 50px;
+        color: white;
+        
+    }
+    .homepage .back .your h1{
+        font-size: 55px;
+        color: white;
+        font-family: monospace;
+    }
+     /*  <!-- ========fashionlook================ --> */
+     .f-flex{
+        display: flex;
+    
+        gap: 40px;
+    }
+    .f-home .f-flex .f-small{
+        padding-bottom: 0px;
+    }
+
+    /* popular */
+    /* copy from befor */
+
+    /* ===trndy=== */
+    /* copy from befor */
+
+    /* free shipping  */
+    /* copy fron befor */
+      /* ==photo over== */
+   
+   .mainpolo{
+    display: flex;
+    /* grid-template: repeat(4,1fr); */
+  
+    padding-bottom: 30px;
+    
+    /* margin: 0px; */
+   }
+
+.polo, .polo1, .polo2, .polo3 {
+/* margin-bottom: 20px; */
+}
+
+  /* ====footer===== */
+ .footer .footersmall{
+
+    display: flex;
+    gap: 150px;
+}
+
+
+}

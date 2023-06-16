@@ -1,0 +1,87 @@
+/* ======home page====== */
+@media (min-width:992px) {
+    .homepage .back .trend{
+        display: flex;
+      
+        align-items: center;
+        padding-top: 100px;
+    
+    }
+    .homepage .back .trend .title h1{
+        padding-top: 50px;
+        color: white;
+        
+    }
+    .homepage .back .your h1{
+        font-size: 30px;
+        color: white;
+        font-family: monospace;
+    }
+     /*  <!-- ========fashionlook================ --> */
+     .f-flex{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+    }
+    .f-home .f-flex .f-small{
+        padding-bottom: 0px;
+    }
+    /* =======over effect========== */
+    .discover{
+       display: flex;
+       gap: 30px;
+       margin: 0px 30px;
+   }
+
+      /* popular */
+      .popular .p-small{
+        display: flex ;
+       
+        gap: 20px;
+       }
+       .popular .p-small .p-text{
+        padding-bottom: 0px;
+       }
+         /* ===trendy===== */
+       .maintrendy .container{
+        margin: 0px 100px;
+       }  
+
+        /* free shipping */
+       .shipping .free{
+        display: flex;
+    
+        gap: 20px;
+    }
+
+     /* ==photo over== */
+   
+   .mainpolo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0;
+    padding-bottom: 30px;
+    
+    /* margin: 0px; */
+   }
+
+.polo, .polo1, .polo2, .polo3 {
+/* margin-bottom: 20px; */
+}
+
+/* ==detailes== */
+.detailflex{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 2.5fr 1fr;
+    gap:0px;
+    padding-bottom: 40px;
+}
+ /* ====footer===== */
+ .footer .footersmall{
+
+    display: flex;
+    gap: 10px;
+}
+
+
+}

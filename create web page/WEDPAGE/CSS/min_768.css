@@ -1,0 +1,38 @@
+@media (min-width:768px) {
+    /* ====COMMON CSS======= */
+    header .container{
+        margin: 0px 50px;
+    }
+    /* =====home page==== */
+    .homepage .homepage-p .homepage-content h1{
+        
+        font-size:45px;
+ }
+ .homepage .waveWrapper.waveAnimation{
+        height: 156px;
+        margin-top: -50px;
+    }
+    /* learn couse section inherit from min width 576px */
+    /* our facility inherit from  min widtg 576px */
+    /* news section inherit from min width 576px */
+    /* brands */
+    .brands .container .brands-grid{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+
+    }
+
+    /* === */
+    .learn-online .container.learn-p{
+        padding: 80px 172px;
+      }
+     /* testimonilas */
+     .testimonials .container .client-grid{
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+     
+    }
+
+    /* footer inherit from min width 576px */
+}

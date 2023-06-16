@@ -1,0 +1,21 @@
+@media (min-width:1200px) {
+    /* ====COMMON CSS======= */
+    header .container{
+        margin: 0px 80px;
+    }
+    /* =====home page==== */
+    .homepage .homepage-p .homepage-content h1{
+        
+        font-size:60px;
+ }
+ .homepage .waveWrapper.waveAnimation{
+        height: 238px;
+        margin-top: -100px;
+    }
+    /* our facility inherit from 992px */
+    /* news section inherit from 992px */
+    /* testimonials inherit from 992px */
+     /* brands section inherit from 992px */
+
+     /* footer inherit grom 992px */
+}

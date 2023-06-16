@@ -1,0 +1,1104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin: 0px 100px;
+}
+/* =========home page======= */
+.homepage{
+    background: url(banner2.jpg) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.homepage::after{
+    content: "";
+    position:absolute ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: -1;
+}
+.homepage .opt{
+    display: flex;
+
+    justify-content: end;
+}
+.homepage .option{
+    margin-top: 30px;
+    
+    height:70px ;
+    width:70px ;
+    border-radius:50% ;
+    background-color: rgb(228, 51, 51);
+    display: grid;
+    place-content:center;
+
+}
+.homepage .back .trend{
+    display: flex;
+  
+    align-items: center;
+    padding-top: 100px;
+
+}
+.homepage .back .trend .title{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+.homepage .back .trend .title h1{
+    padding-top: 50px;
+    color: white;
+    
+}
+.homepage .back .your h1{
+    font-size: 55px;
+    color: white;
+    font-family: monospace;
+}
+
+.homepage .back .text1{
+    width: fit-content;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 0px;
+    color: white;
+} 
+.homepage .back .text1 .line{
+    height: 1px;
+    width: 50px;
+    background-color: white;
+    transition: .5s all ease-in-out;
+}
+.homepage .back .text1:hover .line{
+    width: 70px;
+}
+.homepage .back .mainbtn{
+    display: flex;
+    /* gap: 20px; */
+    position: relative;
+}
+
+
+.main{
+    height: 100px;
+    width: 100px;
+    /* border: 2px solid black; */
+    position: relative;
+}
+.main span{
+    color: white;
+    font-size: 30px; 
+    margin-left: 30px;
+    margin: 35px;
+}
+.btn1 button{
+    border: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    /* left: 0px; */
+    color: white;
+    /* background-color: rgb(0,0,0,0.588); */
+    background-color: white;
+    text-transform: capitalize;
+    height: 100%;
+    width: 0%;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+}
+ .main .btn2 button{
+    border: none;
+    position: absolute;
+    top: 0px;
+    /* right: 0px; */
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    /* background-color: rgb(0,0,0,0.588); */
+    background-color: white;
+    text-transform: capitalize;
+    height: 100%;
+    width: 0%;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+.main:hover button{
+    width: 100%;
+    background-color: white;
+}
+.main:hover span{
+    position: absolute;
+    color: black;
+
+    z-index: 1;
+    /* color: white; */
+}
+/*==========fashion look======  */
+.padding-f{
+    padding: 80px 0px;
+}
+.f-flex{
+    display: flex;
+    gap: 40px;
+}
+.f-home .f-flex .f-small .f-image img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+    
+
+
+}
+.f-home .f-flex .f-small .f-image{
+    border-radius: 15PX;
+    position: relative;
+     overflow: hidden;
+     height: 394px;
+}
+.f-home .f-flex .f-small .f-image::after{
+    content: "";
+    /* background-color:rgba(0, 255, 255, 0.185); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    
+}
+.f-home .f-flex .f-small .f-image:hover::after{
+    background-color:rgba(0, 255, 255, 0.185);
+}
+.f-home .f-flex .f-small .f-text {
+    /* display: grid;
+    place-content: center; */
+    text-align: center;
+    
+}
+.f-home .f-flex .f-small .line1{
+    height: 2px;
+    width: 70px;
+    margin: auto;
+    background-color: blue;
+
+}
+.f-home .f-flex .f-small .f-text h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+   color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-weight: 500;
+}
+.f-home .f-flex .f-small .f-text h1:hover{
+    color: grey;
+}
+.f-home .f-flex .f-small p{
+    font-size: 18px;
+    color: grey;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.f-home .f-flex .f-small button{
+    height: 50px;
+    width: 180px;
+    background-color: #fc7086;
+    border: 2px solid transparent;
+    transition: 0.5s all ease;
+}
+.f-home .f-flex .f-small button:hover{
+    background-color: rgb(26, 110, 110);
+}
+.f-home .f-flex .f-small button a{
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+/* =======over effect========== */
+.discover{
+    display: flex;
+    gap: 30px;
+    margin: 0px 30px;
+}
+/* =====left side====== */
+.discover .leftdis{
+    flex: 1;
+    background: url(clip1.jpg) no-repeat center ;
+    background-size: cover;
+    height: 400px;
+    padding-left: 30px;
+    position: relative;
+    z-index: 1;
+}
+.discover .leftdis::after{
+    content: "";  
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* left: 0;
+    bottom: 0; */
+    width: 0;
+    height: 0;
+    /* background-color:blueviolet; */
+    background: rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-out 0s;
+    z-index:-1;
+    
+}
+.discover .leftdis:hover:after{
+    width: 100%;
+    height: 100%;
+
+}.discover .leftdis::before{
+    content: "";  
+    position: absolute;
+    /* right: 0;
+    top: 0; */
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    /* background-color:blueviolet; */
+    background: rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-out 0s;
+    z-index: -1;
+    
+}
+.discover .leftdis:hover::before{
+    width: 100%;
+    height: 100%;
+
+}
+
+.discover .leftdis h1{
+    padding-top: 150px;
+    padding-bottom: 15px;
+
+}
+.discover .leftdis h2{
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.discover .leftdis button{
+    height: 50px;
+    width: 170px;
+    background-color: white;
+    border: 2px solid transparent;
+    position: static;
+    z-index: 99;
+}
+.discover .leftdis button:hover{
+    background-color: rgba(255, 255, 255, 0.849);
+}
+
+/* ======rightside====== */
+
+
+.discover .rightdis{
+    flex: 1;
+    background: url(clip2.jpg) no-repeat center ;
+    background-size: cover;
+    height: 400px;
+    padding-left: 30px;
+    position: relative;
+    z-index: 1;
+}
+.discover .rightdis::after{
+    content: "";  
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* left: 0;
+    bottom: 0; */
+    width: 0;
+    height: 0;
+    /* background-color:blueviolet; */
+    background: rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-out 0s;
+    z-index:-1;
+    
+}
+.discover .rightdis:hover:after{
+    width: 100%;
+    height: 100%;
+
+}.discover .rightdis::before{
+    content: "";  
+    position: absolute;
+    /* right: 0;
+    top: 0; */
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    /* background-color:blueviolet; */
+    background: rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-out 0s;
+    z-index: -1;
+    
+}
+.discover .rightdis:hover::before{
+    width: 100%;
+    height: 100%;
+
+}
+.discover .rightdis .text3 {
+    text-align: end;
+    padding-right: 30px;
+}
+.discover .rightdis h1{
+    padding-top: 150px;
+    padding-bottom: 15px;
+
+}
+.discover .rightdis h2{
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.discover .rightdis button{
+    height: 50px;
+    width: 170px;
+    background-color: white;
+    border: 2px solid transparent;
+    position: sticky;
+    z-index: 99;
+}
+.discover .rightdis button:hover{
+    background-color: rgba(255, 255, 255, 0.849);
+}
+.discover a{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.discover button a{
+    font-weight: 700;
+}
+/* =======popular outfit====== */
+.popular .padding-po{
+    padding: 80px 0px;
+}
+.popular .p-small{
+    display: flex;
+    gap: 20px;
+}
+.popular .p-small .p-image{
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.popular .p-small .p-image img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+}    
+.popular .p-small .p-text{
+    flex: 1;
+    text-align: center;
+}
+.popular .p-small .p-text h1{
+     padding-top: 150px;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.popular .p-small .p-text p{
+   font-size: 20px;
+   padding: 15px 0px;
+   color: grey;
+}
+.popular .p-small .p-text button{
+   height: 50px;
+   width: 190px;
+   background-color: #fc7086;
+   font-size: 17px;
+   font-weight: 600;
+   color: white;
+   border: 2px solid transparent;
+}
+.popular .p-small .p-text button:hover{
+    background-color: cornflowerblue;
+}
+ /* ===========trendy========= */
+.maintrendy .container .trendy{
+    display: flex;
+    gap: 20px;
+}
+.maintrendy{
+    padding-bottom: 70px;
+}
+
+.maintrendy .trendy1{
+    flex: 1;
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+.maintrendy .trendy2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.maintrendy .trendy1 .trendyimage{
+    margin: 15px;
+    display: grid;
+    place-content: center;
+}
+.maintrendy .trendy1 .trendyimage button{
+    height:50px ;
+    width:170px ;
+    background-color: white;
+    border: 2px solid transparent;
+}
+.maintrendy .trendy1 .trendyimage button:hover{
+    background-color: rgba(255, 255, 255, 0.781);
+}
+.maintrendy .trendy1 .trendyimage button a{
+    font-size: 17px;
+    font-weight:540;
+    color: black;
+}
+
+ .maintrendy .trendy1 .trendyimage{
+    background: url(tren1.jpg) no-repeat center;
+    background-size: cover;
+    height:610px
+    
+}
+.maintrendy .trendy2 .trendysmall1{
+    border: 1px solid grey;
+    border-radius: 10px;
+  
+}
+.maintrendy .trendy2 .trendysmall1 .trendysmallimage{
+    margin: 15px;
+    display: grid;
+    place-content: center;
+}
+.maintrendy .trendy2 .trendysmall1 .trendysmallimage{
+    flex: 1;
+    background: url(tren2.jpg) no-repeat center;
+    background-size: cover;
+    height: 280px;
+}
+.maintrendy .trendy2 .trendysmall2{
+    border: 1px solid grey;
+    border-radius: 10px;
+    
+}
+.maintrendy .trendy2 .trendysmall2 .trendysmallimage{
+    margin: 15px;
+    display: grid;
+    place-content: center;
+}
+.maintrendy .trendy2 .trendysmall2 .trendysmallimage{
+    flex: 1;
+    background: url(tren3.jpg) no-repeat center;
+    background-size: cover;
+    height: 280px;
+}
+.maintrendy .trendy2 .trendysmall1 .trendysmallimage button{
+    height:50px ;
+    width:170px ;
+    background-color: white;
+    border: 2px solid transparent;
+}
+.maintrendy .trendy2 .trendysmall1 .trendysmallimage button a{
+    font-size: 17px;
+    font-weight:540;
+    color: black;
+}
+.maintrendy .trendy2 .trendysmall2 .trendysmallimage button:hover{
+    background-color: rgba(255, 255, 255, 0.781);
+}
+.maintrendy .trendy2 .trendysmall2 .trendysmallimage button{
+    height:50px ;
+    width:170px ;
+    background-color: white;
+    border: 2px solid transparent;
+}
+.maintrendy .trendy2 .trendysmall2 .trendysmallimage button a{
+    font-size: 17px;
+    font-weight:540;
+    color: black;
+}
+.maintrendy .trendy2 .trendysmall1 .trendysmallimage button:hover{
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+/* =========fashion look========== */
+.fashionlook{
+    background: url(fashionlook.jpg) no-repeat center;
+    background-size: cover;
+    height: 550px;
+}
+.fashionlook .fashiontext h2{
+    color: rgba(255, 255, 255, 0.692);
+    padding-top: 100px;
+    padding-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}   
+.fashionlook .fashiontext h1{
+color: white;
+   font-size: 30px;
+   padding-bottom: 20px;
+   width: 300px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.fashionlook .fashiontext p{
+ color: white;
+ font-size: 17px;
+ width: 390px;
+}
+/* ===========free shipping========= */
+.shipping{
+    /* background-color:rgba(255, 255, 255, 0.829); */
+}
+.shipping .free{
+    display: flex;
+    gap: 20px;
+}
+.shipping .free .free1{
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid black; */
+    padding: 35px;
+    background-color: white;
+    box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%);
+
+}
+.shipping .free .free1 span{
+    font-size: 30px;
+    color: #fc7086;
+}
+.shipping .free .free1 h1{
+    padding: 20px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.shipping .free .free1 p{
+    color: grey;
+     font-size: 16px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* ===========overly======== */
+.mainover{
+  padding-bottom: 40px;
+}
+.mainover .overflex{
+    display: flex;
+}
+.overimage1{
+   flex: 1;
+   background: url(overimg1.jpg) no-repeat center;
+   background-size: cover;
+   padding:20px;
+   text-align: center;
+   position: relative;
+   z-index: 1;
+
+}
+.mainover .overflex .overimage1::after{
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    transition: 1s all ease-in-out;
+    background-color: rgba(0, 0, 0, 0.356);
+    z-index: -1;
+}
+.mainover .overflex .overimage1:hover::after {
+    background-color: rgba(0, 0, 0, 0.356);
+    height: 100%;
+
+}
+
+.overimage1 .overtext h1{
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 100px;
+
+}
+.overimage1 .overtext p{
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom:80px;
+}
+
+.overimage2{
+    flex: 1;
+    background: url(overimg2.jpg) no-repeat center;
+    background-size: cover;
+    /* padding: 160px; */
+ }
+ .overimage3{
+    flex: 1;
+    background: url(overimg3.jpg) no-repeat center;
+    background-size: cover;
+    /* padding: 160px; */
+ }
+ .overimage4{
+    flex: 1;
+    background: url(overimg4.jpg) no-repeat center;
+    background-size: cover;
+    /* padding:200px 160px; */
+    
+ }
+ /* ==================photo over======= */
+ .mainpolo{
+  display: flex;
+  gap: 0;
+  padding-bottom: 30px;
+  
+  /* margin: 0px; */
+ }
+ .polo{
+    flex: 1;
+    height: 370px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    background: url(overimg1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+
+ }
+ .polo::after{
+    content: "";
+  
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 1s all ease-in-out;
+    background-color: rgba(51, 180, 247, 0.54);
+    z-index: 111;
+  
+
+ }
+.polo:hover::after{
+    background-color: transparent;
+} 
+ .polotext{
+    position: absolute;
+    /* top:0 ; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: transparent;
+    height: 0;
+    width: 100%;
+   
+    display: grid;
+    place-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    transition: 1s all ease-in-out;
+
+
+}
+.polo:hover .polotext{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+}
+  /*    ========= */
+
+.polo1{
+    flex: 1;
+    height: 370px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    background: url(overimg2.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+
+ }
+ .polo1::after{
+    content: "";
+  
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 1s all ease-in-out;
+    background-color: rgba(51, 180, 247, 0.54);
+    z-index: 111;
+  
+
+ }
+.polo1:hover::after{
+    background-color: transparent;
+} 
+ .polotext{
+    position: absolute;
+    /* top:0 ; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: transparent;
+    height: 0;
+    width: 100%;
+   
+    display: grid;
+    place-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    transition: 1s all ease-in-out;
+
+
+}
+.polo1:hover .polotext{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+}
+  
+
+
+.polo2{
+    flex: 1;
+    height: 370px;
+    width: 300px;
+    margin:  auto;
+    position: relative;
+    background: url(overimg3.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+
+ }
+ .polo2::after{
+    content: "";
+  
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 1s all ease-in-out;
+    background-color: rgba(51, 180, 247, 0.54);
+    z-index: 111;
+  
+
+ }
+.polo2:hover::after{
+    background-color: transparent;
+} 
+ .polotext{
+    position: absolute;
+    /* top:0 ; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: transparent;
+    height: 0;
+    width: 100%;
+   
+    display: grid;
+    place-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    transition: 1s all ease-in-out;
+
+
+}
+.polo2:hover .polotext{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+}
+
+
+
+.polo3{
+    flex: 1;
+    height: 370px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    background: url(overimg4.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+
+ }
+ .polo3::after{
+    content: "";
+  
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 1s all ease-in-out;
+    background-color: rgba(51, 180, 247, 0.54);
+    z-index: 111;
+  
+
+ }
+.polo3:hover::after{
+    background-color: transparent;
+} 
+ .polotext{
+    position: absolute;
+    /* top:0 ; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: transparent;
+    height: 0;
+    width: 100%;
+   
+    display: grid;
+    place-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    transition: 1s all ease-in-out;
+
+
+}
+.polo3:hover .polotext{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+}
+/* ========details===== */
+.detailflex{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+.detailflex .smalld1{
+    flex: 2.5;
+    padding-top: 45px;
+}
+.detailflex .smalld1 .simage{
+    display: flex;
+    align-items: center;
+
+}
+
+.detailflex .smalld1 .simage img{
+    height: 70px;
+    width: 70px;
+}
+.detailflex .smalld1 .simage .stext h4{
+    font-size: 30px;
+    font-family: monospace ;
+}
+.detailflex .smalld1 .simage .stext h4:hover{
+    color: grey;
+}
+.detailflex .smalld1 p{
+    color: grey;
+    font-size: 18px;
+    padding-top: 20px;
+}
+.detailflex .smalld1 h1{
+    padding-top: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600; 
+}
+.detailflex .smalld1 .smail{
+  padding-top: 30px;
+  
+}
+.detailflex .smalld1 .smail input{
+    height: 45px;
+    width: 255px;
+    padding:20px;
+
+}
+.detailflex .smalld1 .smail button{
+    height: 45px;
+    width: 60px;
+    background-color: #fc7086;
+   
+}
+.detailflex .smalld1 .smail button:hover{
+    background-color: #e78796;
+}
+.detailflex .smalld1 .smail button i{
+    font-size: 20px;
+    color: white;
+    padding: 0px;
+}
+.detailflex .smalld2{
+    flex: 1;
+    padding: 20px;
+}
+.detailflex .smalld2 ul li{
+    padding-bottom: 10px;
+    font-size:18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+} 
+.detailflex .smalld2 ul a{
+    color: grey;
+}
+.detailflex .smalld2 ul a:hover{
+    color:#fc7086;
+}
+.detailflex .smalld2 h1{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.detailflex .smalld3{
+    flex: 2.5;
+    padding: 0px 30px
+}
+.detailflex .smalld3 h1{
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+.detailflex .smalld3 .smallimage1{
+    display: flex;
+    gap: 20px;
+}
+.detailflex .smalld3 .smallimage1 .photo{
+    position: relative;
+}
+.detailflex .smalld3 .smallimage1 .photo::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 93%;
+    border-radius: 10px;
+    /* background-color: aqua; */
+}
+.detailflex .smalld3 .smallimage1 .photo:hover:after{
+    background-color: rgba(187, 178, 178, 0.582);
+}
+.detailflex .smalld3 .smallimage1 .photo img{
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+
+}
+.detailflex .smalld3 .smallimage1 .phototext{
+    padding: 5px;
+}
+.detailflex .smalld3 .smallimage1 .phototext a h3{
+    font-size: 15px;
+    font-weight:549;
+    font-family: sans-serif;
+    line-height: 25px;
+    color: black;
+}
+.detailflex .smalld3 .smallimage1 .phototext a h3:hover{
+    color: grey;
+}
+.detailflex .smalld3 .smallimage1 .phototext p{
+    color: grey;
+    padding-top: 8px;
+}
+.detailflex .smalld4{
+    flex: 1;
+}
+.detailflex .smalld4 h1{
+     padding-top: 40px;
+    padding-bottom: 50px;   
+}
+.detailflex .smalld4 ul li{
+    padding-bottom: 10px;
+    font-size:18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+} 
+.detailflex .smalld4 ul a{
+    color: grey;
+}
+.detailflex .smalld4 ul a:hover{
+    color:#fc7086;
+}
+/* ====footer===== */
+.footer{
+    padding: 30px 0px;
+}
+.footer .footersmall{
+
+    display: flex;
+    gap: 200px;
+}
+.footer .footersmall .trademark{
+    flex: 2;
+}
+.footer .footersmall .trademark p{
+    color: grey;
+
+}
+.footer .footersmall .trademark a{
+    color: black;
+}
+.footer .footersmall .social{
+    flex: 1;
+}
+.footer .footersmall .trademark a:hover{
+    text-decoration:underline;
+}
+.footer .footersmall span{
+    padding: 5px;
+    transition: .5s all ease;
+}
+.footer .footersmall .help{
+    flex: 2;
+}
+.footer .footersmall span:hover{
+    color: #fc7086;
+}
+.footer .footersmall .help ul{
+    display: flex;
+    gap: 20px;
+}
+.footer .footersmall .help ul a{
+    color: black;
+}
+.footer .footersmall .help ul a:hover{
+    color: grey;
+}

@@ -1,0 +1,89 @@
+/* ======home page====== */
+@media (min-width:768px) {
+    .homepage .back .trend{
+        display: flex;
+      
+        align-items: center;
+        padding-top: 13px;
+    
+    }
+    .homepage .back .trend .title h1{
+        padding-top: 50px;
+        color: white;
+        
+    }
+    .homepage .back .your h1{
+        font-size: 20px;
+        color: white;
+        font-family: monospace;
+    }
+     /*  <!-- ========fashionlook================ --> */
+     .f-flex{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+    }
+    .f-home .f-flex .f-small{
+        padding-bottom: 0px;
+    }
+     /* =======over effect========== */
+     /* copy from befor */
+       /* popular */
+   .popular .p-small{
+    display: grid ;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+   }
+   .popular .p-small .p-text{
+    padding-bottom: 20px;
+
+   }
+
+    /* trendy */
+    .maintrendy .container{
+        margin: 0px 20px;
+       }  
+       .maintrendy .container .trendy{
+        display: flex;
+        gap: 20px;
+    } 
+    .maintrendy .container .trendy .trendy1{
+        margin-bottom: 0px;
+    }
+
+    /*==== freeshipping */
+   .shipping .free{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+   }
+     .shipping .free .free1{
+        margin-bottom: 0px;
+   }
+ 
+   /* ==photo over== */
+   .mainpolo{
+    display: grid;
+    grid-template-columns: repeat(3.1fr);
+    gap: 0;
+    padding-bottom: 30px;
+    
+   }
+   
+
+   /* ==detailes== */
+   .detailflex{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+  /* ====footer===== */
+.footer .footersmall{
+
+    display: flex;
+    gap: 10px;
+}
+   
+}
